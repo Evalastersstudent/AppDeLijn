@@ -1,0 +1,46 @@
+aanmelden
+      Werkt!
+
+      Probleem: Is niet volgens de regels van de kunst: Dit werkt voor elke gebruikersnaam, en dus niet enkel voor bestaande gebruikers.
+
+
+index
+      Werkt!
+
+
+halteZoeken
+      Werkt! -> nog stylen!
+
+
+halteZoekenResultaat
+      Werkt!
+
+
+registreren
+      Werkt!
+
+      Probleem: Is niet volgens de regels van de kunst: Dit werkt voor elke gebruikersnaam, en dus niet enkel voor bestaande gebruikers.
+
+
+routePlannen
+      Werkt!
+
+      Probleem: teruggeven 'on' en 'off' gebeurt niet consequent. Soms wordt 'off' teruggegeven wanneer het vervoersmiddel wel aangevinkt is. Anderzijds wordt er 'undefined' teruggegeven als het niet aangevinkt is.
+
+
+routePlannenResultaat
+      Werkt!
+
+      Probleem: teruggeven 'on' en 'off' gebeurt niet consequent. Soms wordt 'off' teruggegeven wanneer het vervoersmiddel wel aangevinkt is. Anderzijds wordt er 'undefined' teruggegeven als het niet aangevinkt is.
+
+
+startscherm
+      Werkt!
+
+
+verkooppuntZoeken
+      Werkt!
+
+
+verkooppuntZoekenResultaat
+      Werkt!

@@ -1,0 +1,42 @@
+<% include header %>
+
+<script>
+       var halte = <%- content %>;
+       for (var i = 0; i < halte.length; i++) {
+          if (halte[i].lijnen.length != 0) {
+               var div = document.createElement("div");
+               div.setAttribute("class", "gevondenHaltesClass");
+               var h2 = document.createElement("h2");
+               var h2T = document.createTextNode(halte[i].omschrijvingLang);
+               var ul = document.createElement("ul");
+               for (var j = 0; j < halte[i].lijnen.length; j++) {
+                    var pLijnNr = document.createElement("li");
+                    pLijnNr.setAttribute("class", "lijnNummer");
+                    var pLijnBestem = document.createElement("li");
+                    var pLijnNrT = document.createTextNode(halte[i].lijnen[j].lijnNummer);
+                    var pLijnBestemT = document.createTextNode(halte[i].lijnen[j].bestemming);
+
+                    var backgroundColor = halte[i].lijnen[j].kleurAchterGrond;
+                    var backgroundColorBorder = halte[i].lijnen[j].kleurAchterGrondRand;
+                    var color = halte[i].lijnen[j].kleurVoorGrond;
+
+                    var halteNr = halte[i].halteNummer;
+                    pLijnNr.appendChild(pLijnNrT);
+                    pLijnBestem.appendChild(pLijnBestemT);
+                    ul.appendChild(pLijnNr);
+                    ul.appendChild(pLijnBestem);
+
+                    pLijnNr.style.background = backgroundColor;
+                    pLijnNr.style.border = "solid 1px" + backgroundColorBorder;
+                    pLijnNr.style.color = color;
+               }
+               div.appendChild(h2);
+               h2.appendChild(h2T);
+               div.appendChild(ul);
+               document.body.appendChild(div);
+          }
+       }
+</script>
+
+
+<% include footer %>

@@ -1,0 +1,14 @@
+<% include header %>
+
+<h1>Zoek verkooppunten in uw gemeente</h1>
+
+<form method="post" action="/verkooppuntZoekenResultaat">
+  <input type="text" value="" name="stad" placeholder="Gemeente" class="invullen" required>
+  <input type="submit" value="Zoeken" class="knop">
+</form>
+
+<h2>Verkooppunten in <%- stad %></h2>
+
+<%- content %>
+
+<% include footer %>

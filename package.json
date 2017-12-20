@@ -1,0 +1,40 @@
+{
+  "name": "DeLijn",
+  "version": "1.0.0",
+  "description": "Routeplanner",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Ellis-D/CMP5_AppDeLijn.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "technology",
+    "node",
+    "express",
+    "De Lijn",
+    "Routeplanner"
+  ],
+  "author": [
+    "Hanne Dée",
+    "Ellis Deleeck",
+    "Margo Deleeck",
+    "Lisa Cornelissen",
+    "Eva Lasters"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "date-time": "^2.1.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "request": "^2.83.0"
+  }
+}

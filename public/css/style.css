@@ -1,0 +1,259 @@
+body {
+  background-color: #fece00;
+  background-image: url('/img/patroon.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 2em;
+  color: #202020;
+  box-sizing: border-box;
+  margin: 35px;
+}
+
+header {
+  margin: 15% auto;
+}
+
+#logo {
+  width: 75px;
+}
+
+#terugGaan, #terugGaan img {
+  width: 50px;
+  float: right;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #202020;
+  text-align: left;
+  margin: 4%;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #202020;
+  text-align: left;
+  margin: 6% 4% 2% 4%;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: #202020;
+  text-align: left;
+  margin: 0% 4%;
+  line-height: 1.5em;
+}
+
+a, input, select, label, option, button, ul, li {
+  font-size: 1.15em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: #202020;
+  text-align: center;
+  text-decoration: none;
+}
+
+label {
+  line-height: 2em;
+  display: block;
+}
+
+.invullen, .knop  {
+  border: none;
+  border-radius: 30px;
+  padding: 4% 3%;
+  margin: 4% 2%;
+  width: 90%;
+  display: block;
+}
+
+.invullen  {
+  background-color: #f0f0f0;
+  color: #202020;
+  text-align: left;
+  padding: 4% 1% 4% 5%;
+}
+
+.knop  {
+  background-color: #202b3d;
+  color: #f0f0f0;
+}
+
+#aanmeldenKnop {
+  border: none;
+  width: 100%;
+  display: block;
+  background-color: #202b3d;
+  color: #f0f0f0;
+}
+
+input[type="date"], input[type="time"], select {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #202B3D;
+  background-color: transparent;
+}
+
+input[type="date"] {
+  width: 50%;
+  padding: 0% 0% 2% 3%;
+  margin: 0% 2% 0% 4%;
+}
+
+input[type="time"] {
+  width: 30%;
+  padding: 0% 0% 2% 3%;
+  margin: 0% 4% 0% 2%;
+}
+
+select {
+  width: 92%;
+  padding: 0% 3% 2% 3%;
+  margin: 4% 4% 1% 4%;
+}
+
+.vervoersMiddelen {
+  height: 30px;
+  position: relative;
+  display: block;
+  margin: 5% 0% 10% 0%;
+  padding-left: 10px;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  z-index: 200;
+  width: 35px;
+  height: 35px;
+  opacity: 0.01;
+}
+input[type=checkbox]:checked {
+  z-index: 200;
+  width: 35px;
+  height: 35px;
+  opacity: 0.01;
+}
+
+input[type=checkbox]:checked + label {
+  border-color: #202b3d;
+}
+
+.checkboxBus, .checkboxTram, .checkboxMetro, .checkboxTrein, .checkboxBelbus {
+	width: 25px;
+	margin: 0;
+	position: relative;
+}
+
+.checkboxBus label, .checkboxTram label, .checkboxMetro label, .checkboxTrein label, .checkboxBelbus label {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	background-color: #f0f0f0;
+	border: 1.5px solid #f0f0f0;
+  border-radius: 10px;
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  z-index: -10
+}
+.checkboxBus label, .checkboxBus input {
+  background-image: url("/img/bus.png");
+	position: absolute;
+  left: 0;
+	top: 0;
+}
+.checkboxTram label, .checkboxTram input {
+  background-image: url("/img/tram.png");
+	position: absolute;
+  left: 60px;
+	top: 0px;
+}
+.checkboxMetro label, .checkboxMetro input {
+  background-image: url("/img/metro.png");
+	position: absolute;
+  left: 120px;
+	top: 0px;
+}
+.checkboxTrein label, .checkboxTrein input {
+  background-image: url("/img/trein.png");
+	position: absolute;
+  left: 180px;
+	top: 0px;
+}
+.checkboxBelbus label, .checkboxBelbus input {
+  background-image: url("/img/belbus.png");
+	position: absolute;
+  left: 240px;
+	top: 0px;
+}
+
+#startLat, #startLng, #endLat, #endLng {
+  visibility: hidden;
+}
+.gevondenRouteClass, .gevondenVerkooppuntenClass {
+  padding: 5% 0%;
+  border-bottom: solid black 1px;
+}
+
+#routesKnop, #lijnenKnop, #verkooppuntenKnop {
+  width: 95%;
+  padding: 4.5%;
+}
+
+.gevondenHaltesClass h2{
+  font-size: 1.5em;
+
+}
+
+.gevondenHaltesClass ul{
+  width: 95%;
+  text-align: left;
+  padding: 2.5% 0% 7.5% 0%;
+  margin: 0px 10px;
+  border-bottom: solid black 1px;
+}
+
+.gevondenHaltesClass li{
+  display: inline-block;
+  text-align: left;
+  width: 75%;
+  font-size: 1em;
+  margin: 2.5% 0%;
+  vertical-align: middle;
+  line-height: 1.25em;
+}
+
+.gevondenHaltesClass li.lijnNummer{
+  border-radius: 30px;
+  width: 20%;
+  margin-right: 10px;
+  text-align: center;
+  padding: 1% 0%;
+}
+
+.gevondenHaltesClass #terugpijl {
+  background-color: #373D42;
+  display: block;
+  margin: 0 auto;
+  font-size: 3em;
+  color: #fff;
+  width: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.gevondenHaltesClass #haltes {
+  margin-top: 5%;
+}

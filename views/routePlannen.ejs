@@ -1,0 +1,50 @@
+<% include header %>
+
+<form id="formRoutePlannen" method="post" action= "routePlannenResultaat">
+
+
+			<input type="text" name="startPoint" value="" id="startPoint" placeholder="Van" class="invullen" required autofocus>
+			<input type="text" name="endPoint" value="" id="endPoint" placeholder="Naar" class="invullen" required>
+			<input type="date" name="date" value="" id="routeplannenDatum" required>
+			<input type="time" name="time" value="" id="routeplannenTijd" required>
+			<select name="arrivalDeparture">
+		    		<option value="1">Vertrekken</option>
+		    		<option value="2">Aankomen</option>
+		  </select>
+			<div class="vervoersMiddelen">
+						<div class="checkboxBus">
+									<input type="checkbox" name="byBus" value="on" id="busInput" class="fotoCheckbox" checked>
+									<label for="busInput"></label>
+						</div>
+						<div class="checkboxTram">
+									<input type="checkbox" name="byTram" value="on" id="tramInput" class="fotoCheckbox" checked>
+									<label for="tramInput"></label>
+						</div>
+						<div class="checkboxMetro">
+									<input type="checkbox" name="byMetro" value="on" id="metroInput" class="fotoCheckbox" checked>
+									<label for="metroInput"></label>
+						</div>
+						<div class="checkboxTrein">
+									<input type="checkbox" name="byTrain" value="on" id="treinInput" class="fotoCheckbox" checked>
+									<label for="treinInput"></label>
+						</div>
+						<div class="checkboxBelbus">
+									<input type="checkbox" name="byBelbus" value="on" id="belbusInput" class="fotoCheckbox" checked>
+									<label for="belbusInput"></label>
+						</div>
+			</div>
+
+			<input type="submit" name="zoeken" value="Routes zoeken" id="routesKnop" class="knop">
+
+			<input type="text" name="startLat" value="" id="startLat" required>
+			<input type="text" name="startLng" value="" id="startLng" required>
+
+			<input type="text" name="endLat" value="" id="endLat" required>
+			<input type="text" name="endLng" value="" id="endLng" required>
+
+
+
+
+</form>
+
+<% include footer %>
